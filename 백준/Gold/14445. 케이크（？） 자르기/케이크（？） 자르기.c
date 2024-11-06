@@ -1,0 +1,1 @@
+long long a;main(){scanf("%lld",&a);printf("%lld",a==1?0:(a+1)/2);}
