@@ -1,0 +1,1 @@
+main(x,y){for(gets(&x);~scanf("%d%*d%d",&x,&y);printf("%d ",--y%x*100+y/x+101));}
