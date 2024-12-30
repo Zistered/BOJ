@@ -1,3 +1,3 @@
 a=int(input())
 b=int(input())
-print("high speed rail" if a<=b else "flight")
+print("flight" if a>b else "high speed rail")
