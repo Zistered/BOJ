@@ -15,7 +15,7 @@ int main() {
     cin.tie(0)->sync_with_stdio(0);
 
     vector<string> dict;
-    vector<pair<string, int>> v[100];
+    vector<pair<string, int>> v[1000];
     int n, m;
     cin>>n>>m;
     for(int i=1; i<=n; i++){
@@ -26,7 +26,7 @@ int main() {
         for(auto j:s){
             c+=j;
         }
-        v[c%100].push_back({s, i});
+        v[c%1000].push_back({s, i});
         //cout<<s<<endl;
     }
     while(m--){
@@ -41,7 +41,7 @@ int main() {
             for(auto j:s){
                 c+=j;
             }
-            for(auto i:v[c%100]){
+            for(auto i:v[c%1000]){
                 if(i.first==s){
                     cout<<i.second<<'\n';
                     break;
