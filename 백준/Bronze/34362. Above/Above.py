@@ -1,1 +1,1 @@
-print(float(input())-0.3)
+print(eval(input())-.3)
