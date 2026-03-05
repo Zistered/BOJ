@@ -1,0 +1,11 @@
+a,b,c,d=map(int,input().split())
+if(d>=a+b):
+    if(d>=c):
+        print("~.~")
+    else:
+        print("Shuttle")
+else:
+    if(d>=c):
+        print("Walk")
+    else:
+        print("T.T")
